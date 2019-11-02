@@ -1,0 +1,29 @@
+{
+    "name": "adoxography/brainfudge",
+    "description": "Brainfudge interpreter in PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "adoxography",
+            "email": "nevermore667@gmail.com"
+        }
+    ],
+    "autoload": {
+      "files": [
+        "src/helpers.php"
+      ],
+
+      "psr-4": {
+        "Brainfudge\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Tests\\": "tests/"
+      }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8",
+        "phan/phan": "^2.4"
+    }
+}
