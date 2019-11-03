@@ -113,6 +113,13 @@ final class BrainfudgeTest extends TestCase
         $this->assertEquals(3, $bf->registers[1]);
     }
 
+    public function testItHandlesHighNumbers(): void
+    {
+        $bf = new Brainfudge('++++++++[>++++++++++++++++<-]');
+        $bf->process();
+        $this->assertEquals(128, $bf->registers[1]);
+    }
+
     public function testItRaisesAnExceptionWhenNoRightBracketToGoTo(): void
     {
         $this->expectException(\LogicException::class);

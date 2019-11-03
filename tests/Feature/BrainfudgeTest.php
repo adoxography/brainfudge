@@ -28,6 +28,13 @@ final class BrainfudgeTest extends TestCase
         $this->assertEquals('A', $output);
     }
 
+    public function testItPrintsHighValues(): void
+    {
+        $input = '++++++++[>++++++++++++++++<-]>--.';
+        $output = Brainfudge::run($input);
+        $this->assertEquals('~', $output);
+    }
+
     public function testItRaisesAnErrorWhenGoneTooFarLeft(): void
     {
         $this->expectException(\OutOfBoundsException::class);
