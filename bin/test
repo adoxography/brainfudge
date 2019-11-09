@@ -36,7 +36,7 @@ function test_file {
         target=$(echo "$line" | cut -f2 -d'	')
         issue=$(echo "$line" | cut -f3 -d'	')
 
-        result=$(echo "$input" | $EXE)
+        result=$(echo -e "$input" | $EXE)
 
         if [ "$result" == "$target" ]; then
             num_right=$((num_right + 1))
