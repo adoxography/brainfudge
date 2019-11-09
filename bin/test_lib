@@ -1,0 +1,6 @@
+#!/bin/bash
+
+BIN_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null 2>&1 && pwd )"
+ROOT_DIR="$BIN_DIR/.."
+
+"$ROOT_DIR/vendor/bin/phpunit" -c "$ROOT_DIR/phpunit.xml"
