@@ -8,6 +8,6 @@ final class StdinScanner implements ScannerInterface
 {
     public function getChar(): string
     {
-        return trim(fgets(STDIN)){0};
+        return fgetc(STDIN);
     }
 }
