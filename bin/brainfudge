@@ -5,7 +5,7 @@ require __DIR__.'/../vendor/autoload.php';
 
 use Brainfudge\Brainfudge;
 
-$input = file_get_contents('php://stdin');
+$input = fgets(STDIN);
 
 try {
     $output = Brainfudge::run($input);
