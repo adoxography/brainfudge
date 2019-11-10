@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.com/adoxography/brainfudge.svg?branch=master)](https://travis-ci.com/adoxography/brainfudge)
 
 ## Installation
-You should have [composer](https://getcomposer.org/) installed on your system, as well as PHP >= 7.0.
+You should have [composer](https://getcomposer.org/) installed on your system, as well as PHP >= 7.3.
 
 1. Clone the repository: `git clone https://github.com/adoxography/brainfudge && cd brainfudge`
 1. Generate the autoload file: `composer dump-autoload`
