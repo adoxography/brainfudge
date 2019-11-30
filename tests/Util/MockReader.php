@@ -8,8 +8,8 @@ use Brainfudge\ScannerInterface;
 
 class MockReader implements ScannerInterface
 {
-    public $value;
-    public $index = 0;
+    public string $value;
+    public int $index = 0;
 
     public function __construct(string $value)
     {
@@ -18,6 +18,6 @@ class MockReader implements ScannerInterface
 
     public function getChar(): string
     {
-        return $this->value{$this->index++};
+        return $this->value[$this->index++];
     }
 }

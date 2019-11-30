@@ -10,22 +10,22 @@ namespace Brainfudge;
 final class Brainfudge
 {
     /** @var list<string> $program  The program to interpret */
-    public $program;
+    public array $program;
 
     /** @var array $registers  The program's registers */
-    public $registers = [ 0 ];
+    public array $registers = [ 0 ];
 
     /** @var int $registerIdx  The index of the current register */
-    private $registerIdx = 0;
+    private int $registerIdx = 0;
 
     /** @var int $programIdx  The index of the current command */
-    private $programIdx = 0;
+    private int $programIdx = 0;
 
     /** @var string $output  The program's output */
-    private $output = '';
+    private string $output = '';
 
     /** @var ScannerInterface $scanner  Object to retrieve user input */
-    private $scanner;
+    private ScannerInterface $scanner;
 
     /**
      * @var list<string, string> CALL_TABLE  Map from brainfudge symbol to
